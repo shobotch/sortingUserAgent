@@ -26,7 +26,6 @@ class sortingUa
     * @param string $ua
     * @return string
     */
-
     public function __construct($ua)
     {
         $this->ua = $ua;
@@ -43,6 +42,7 @@ class sortingUa
         $this->ua = $ua;
         return $this->check();
     }
+
     /*
      * UAからスマートフォンか判別します。
     * switch文のcase文を増やすことによって振り分け条件を追加することができます。
@@ -53,6 +53,11 @@ class sortingUa
         return $this->check();
     }
 
+    /**
+     * 実際にチェックを行うメソッド
+     * switch文のcase文を増やすことによって振り分け条件を追加することができます。
+     * @return string スマホだったらsp その他はPC
+     */
     private function check()
     {
         switch (true) {
