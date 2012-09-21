@@ -14,12 +14,19 @@ class sortingUa
      * ユーザーエージェントを格納しています。
     */
     private $ua;
+
+    /**
+     * チェックした結果を格納します。
+     * @var string
+     */
     private $type;
+
     /*
      * 第一引数にUAの情報を入れてください。
     * @param string $ua
-    * @return null
+    * @return string
     */
+
     public function __construct($ua)
     {
         $this->ua = $ua;
